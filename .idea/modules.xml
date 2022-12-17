@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/goods-service-demo/goods-service-demo.iml" filepath="$PROJECT_DIR$/goods-service-demo/goods-service-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-provider-demo3/nacos-provider-demo3.iml" filepath="$PROJECT_DIR$/nacos-provider-demo3/nacos-provider-demo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service-demo/order-service-demo.iml" filepath="$PROJECT_DIR$/order-service-demo/order-service-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-demo/service-demo.iml" filepath="$PROJECT_DIR$/service-demo/service-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-demo2/service-demo2.iml" filepath="$PROJECT_DIR$/service-demo2/service-demo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopcart-service-demo/shopcart-service-demo.iml" filepath="$PROJECT_DIR$/shopcart-service-demo/shopcart-service-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-alibaba-multi-service-demo.iml" filepath="$PROJECT_DIR$/spring-cloud-alibaba-multi-service-demo.iml" />
+    </modules>
+  </component>
+</project>
