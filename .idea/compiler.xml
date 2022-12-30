@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -10,21 +11,24 @@
         <module name="service-demo" />
         <module name="nacos-provider-demo3" />
         <module name="goods-service-demo" />
+        <module name="gateway-demo" />
         <module name="shopcart-service-demo" />
-        <module name="service-demo2" />
+        <module name="service-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="gateway-demo" target="1.8" />
       <module name="goods-service-demo" target="1.8" />
       <module name="nacos-provider-demo (1)" target="1.8" />
       <module name="nacos-provider-demo2 (1)" target="1.8" />
       <module name="nacos-provider-demo3" target="1.8" />
       <module name="order-service-demo" target="1.8" />
+      <module name="service-common" target="1.8" />
       <module name="service-demo" target="1.8" />
       <module name="service-demo2" target="1.8" />
       <module name="shopcart-service-demo" target="1.8" />
-      <module name="spring-cloud-alibaba-multi-service-demo" target="1.8" />
+      <module name="spring-cloud-alibaba-openfeign-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

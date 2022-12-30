@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ltd.newbee.cloud</groupId>
-    <artifactId>spring-cloud-alibaba-multi-service-demo</artifactId>
+    <artifactId>spring-cloud-alibaba-gateway-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>spring-cloud-alibaba-multi-service-demo</name>
+    <name>spring-cloud-alibaba-gateway-demo</name>
     <packaging>pom</packaging>
     <description>Spring Cloud Alibaba Demo</description>
 
@@ -18,6 +18,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <lombok.version>1.18.24</lombok.version>
     </properties>
 
     <modules>
@@ -26,7 +27,9 @@
         <module>goods-service-demo</module>
         <module>order-service-demo</module>
         <module>shopcart-service-demo</module>
-<!--        <module>nacos-provider-demo3</module>-->
+        <module>service-common</module>
+        <module>gateway-demo</module>
+        <!--        <module>nacos-provider-demo3</module>-->
     </modules>
 
     <dependencyManagement>
@@ -66,6 +69,13 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
