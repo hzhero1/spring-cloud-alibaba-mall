@@ -7,13 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="order-service-demo" />
-        <module name="service-demo" />
-        <module name="nacos-provider-demo3" />
-        <module name="goods-service-demo" />
-        <module name="gateway-demo" />
-        <module name="shopcart-service-demo" />
-        <module name="service-common" />
+        <module name="newbee-mall-cloud-goods-api" />
+        <module name="newbee-mall-cloud-recommend-web" />
+        <module name="newbee-mall-cloud-gateway-admin" />
+        <module name="newbee-mall-cloud-goods-web" />
+        <module name="newbee-mall-cloud-common" />
+        <module name="newbee-mall-cloud-user-api" />
+        <module name="newbee-mall-cloud-recommend-api" />
+        <module name="newbee-mall-cloud-user-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,12 +24,20 @@
       <module name="nacos-provider-demo (1)" target="1.8" />
       <module name="nacos-provider-demo2 (1)" target="1.8" />
       <module name="nacos-provider-demo3" target="1.8" />
-      <module name="order-service-demo" target="1.8" />
-      <module name="service-common" target="1.8" />
+      <module name="newbee-mall-cloud-common" target="1.8" />
+      <module name="newbee-mall-cloud-gateway-admin" target="1.8" />
+      <module name="newbee-mall-cloud-goods-api" target="1.8" />
+      <module name="newbee-mall-cloud-goods-service" target="1.8" />
+      <module name="newbee-mall-cloud-goods-web" target="1.8" />
+      <module name="newbee-mall-cloud-recommend-api" target="1.8" />
+      <module name="newbee-mall-cloud-recommend-service" target="1.8" />
+      <module name="newbee-mall-cloud-recommend-web" target="1.8" />
+      <module name="newbee-mall-cloud-user-api" target="1.8" />
+      <module name="newbee-mall-cloud-user-service" target="1.8" />
+      <module name="newbee-mall-cloud-user-web" target="1.8" />
       <module name="service-demo" target="1.8" />
       <module name="service-demo2" target="1.8" />
-      <module name="shopcart-service-demo" target="1.8" />
-      <module name="spring-cloud-alibaba-openfeign-demo" target="1.8" />
+      <module name="spring-cloud-alibaba-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

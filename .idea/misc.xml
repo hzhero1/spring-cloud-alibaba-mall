@@ -3,10 +3,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/service-demo/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-provider-demo2/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos-provider-demo3/pom.xml" />
+        <option value="$PROJECT_DIR$/newbee-mall-cloud-user-service/newbee-mall-cloud-user-web/pom.xml" />
       </list>
     </option>
   </component>
