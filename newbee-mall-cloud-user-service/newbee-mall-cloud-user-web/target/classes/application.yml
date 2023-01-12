@@ -1,0 +1,52 @@
+# application.yml
+
+server:
+  port: 29000
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+spring:
+  application:
+    name: newbee-mall-cloud-user-service
+    cloud:
+      nacos:
+        username: nacos
+        password: nacos
+        discovery:
+          server-addr: localhost:8848
+  redis:
+    database: 7
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+  datasource:
+    name: newbee-mall-cloud-user-datasource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/newbee_mall_cloud_user_db?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
+    username: root
+    password: password
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 60000
+      pool-name: hikariCP
+      max-lifetime: 60000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+
+
