@@ -1,0 +1,52 @@
+# application.yml
+
+server:
+  port: 29110
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+spring:
+  application:
+    name: newbee-mall-cloud-gateway-mall
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          enable: true
+          lower-case-service-id: true
+      routes:
+        - id: user-service-route
+          uri: lb://newbee-mall-cloud-user-service
+          order: 1
+          predicates:
+            - Path=/users/mall/**
+        - id: recommend-service-route
+          uri: lb://newbee-mall-cloud-recommend-service
+          order: 1
+          predicates:
+            - Path=/mall/index/**
+        - id: user-service-route
+          uri: lb://newbee-mall-cloud-goods-service
+          order: 1
+          predicates:
+            - Path=/categories/mall/**
+  redis:
+    database: 7
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0

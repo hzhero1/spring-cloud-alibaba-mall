@@ -5,7 +5,7 @@
     <artifactId>newbee-mall-cloud-gateway-admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>newbee-mall-cloud-gateway-admin</name>
-    <description>网关模块</description>
+    <description>后台管理网关模块</description>
 
     <parent>
         <groupId>ltd.newbee.cloud</groupId>

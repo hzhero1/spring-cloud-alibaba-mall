@@ -104,7 +104,7 @@ public class NewBeeMallIndexConfigServiceImpl implements NewBeeMallIndexConfigSe
         if (!CollectionUtils.isEmpty(indexConfigs)) {
             //取出所有的goodsId
             List<Long> goodsIds = indexConfigs.stream().map(IndexConfig::getGoodsId).collect(Collectors.toList());
-            Result<List<NewBeeMallGoodsDTO>> newBeeMallGoodsDTOResult = goodsService.listByGoodsIds(goodsIds);
+            Result<List<NewBeeMallGoodsDTO>> newBeeMallGoodsDTOResult = goodsService.listByGoodsIds(goodsIds); //Result<List<NewBeeMallGoods>>
             newBeeMallIndexConfigGoodsVOS = BeanUtil.copyList(newBeeMallGoodsDTOResult.getData(), NewBeeMallIndexConfigGoodsVO.class);
             for (NewBeeMallIndexConfigGoodsVO newBeeMallIndexConfigGoodsVO : newBeeMallIndexConfigGoodsVOS) {
                 String goodsName = newBeeMallIndexConfigGoodsVO.getGoodsName();
